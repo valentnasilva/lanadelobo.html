@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(103, 243, 243);
+}
+.logo { 
+    justify-content: center;
+    padding: 10px;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px; 
+}
+img {
+    width: 10%;
+    height: auto;
+}
+main {
+    flex-basis: 70%;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Noto Sans", sans-serif;
+}
+aside {
+    flex-basis: 20%;
+    background-color: antiquewhite;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Noto Sans", sans-serif;
+}
+body .pagar {
+    background-color: darkblue;
+    color: beige;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    justify-content: flex-end;
+}
+footer {
+    flex-basis: 10%;
+    text-align: center;
+    background-color: rgb(0, 62, 73);
+    color: azure;
+    text-decoration: none;
+}
+@media (max-width:900px) {
+body {
+    flex-direction: column;
+    justify-content: center;
+}
+}
